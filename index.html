@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Global Infrastructure Research Collective</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Global Infrastructure Research Collective</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="members.html">Members</a>
+        <a href="workshops.html">Workshops</a>
+        <a href="snapshots.html">Snapshots</a>
+        <a href="news.html">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="slideshow-container">
+  <img class="slide" src="images/bri-map.jpg" alt="Image 1">
+  <img class="slide" src="images/airport.jpg" alt="Image 2">
+  <img class="slide" src="images/anaklia.jpg" alt="Image 3">
+  <img class="slide" src="images/dire-dawa.jpg" alt="Image 4">
+  <img class="slide" src="images/evergreen.jpg" alt="Image 5">
+</div>
+
+<!--
+<section class="image-scatter">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/%22Belt_and_Road%22_economic_corridor_and_its_path_city_topographic_map.jpg" alt="Large main image" />
+</section>
+-->
+
+<section class="about-section">
+  <h2>About</h2>
+  <p>
+    The Global Infrastructure Research Collective is an international academic network of geographers and urban scholars focusing on global infrastructure initiatives and their urban dimensions. Our research integrates the study of infrastructure with urban development, addressing the complexities of contemporary urbanization. We are dedicated to advancing knowledge, fostering critical thinking, and promoting transformative urban practice for a different world. Our collective is committed to providing a platform for interdisciplinary research and collaboration, shaping the international debate around global infrastructure.
+  </p>
+</section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Global Infrastructure Research Collective. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlides() {
+    slides.forEach(slide => slide.style.display = 'none');
+    slideIndex = (slideIndex + 1) % slides.length;
+    slides[slideIndex].style.display = 'block';
+  }
+
+  // Show the first slide immediately
+  slides[0].style.display = 'block';
+
+  // Cycle every 3 seconds
+  setInterval(showSlides, 3000);
+</script>
+
+</body>
+</html>
